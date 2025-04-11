@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Cycle</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        
+         :root {
+            --navtextcolor: rgb(0, 0, 0);
+            --navbgcolor: rgb(255, 191, 0);
+            --btnbgcolor: #6beedc;
+            --btntextcolor: black;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+        }
+        /* Navigation Bar */
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: var(--navbgcolor);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            height: 9vh;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav .logo {
+            color: var(--navtextcolor);
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: "Fredericka the Great", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+        
+        .nav-links li a {
+            color: var(--navtextcolor);
+            text-decoration: none;
+            font-size: medium;
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .nav-links .btn {
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            color: var(--navtextcolor);
+        }
+        /* Hero Section */
+        
+        .hero {
+            background: url('https://media.gettyimages.com/id/1426606515/video/library-background-learning-books-and-studying-at-school-university-and-college-for-exam-test.jpg?s=640x640&k=20&c=avo2_pJ9S9-J9PKSsl11fRQeqC_o-6egk6ZXqXg-pZM=') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            filter: brightness(85%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content .btn {
+            background: var(--btnbgcolor);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--btntextcolor);
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+        
+        .hero-content .btn.secondary {
+            background: var(--btnbgcolor);
+            color: var(--btntextcolor);
+        }
+        /* Sections */
+        
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .grid {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        /* Footer */
+        
+        footer {
+            background: #2e2d2d;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            /* height: 3vh; */
+        }
+        
+        #books a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Book Cycle</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="digi.html">Digital Learning</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+                <li><a href="register.html" class="btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Where Old Books Come Alive Again!!</h1>
+            <h5>Explore a wide range of courses and books tailored for every learner.
+            </h5>
+            <a href="#courses" class="btn">Explore Courses</a>
+            <a href="#books" class="btn secondary">Browse Books</a>
+        </div>
+    </section>
+
+    <section id="courses" class="section">
+        <h2>Popular Free Books</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4842-2499-1" alt="Course 1">
+                <h3>Web Development</h3>
+                <p>Master front-end and back-end development.</p>
+            </div>
+            <div class="card">
+                <img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-3-319-50017-1" alt="Course 2">
+                <h3>Data Science</h3>
+                <p>Learn data analysis, machine learning, and AI.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzfx6mMMqlYeU2Bd_P1-mLhZ96pKXRs9QPFg&s" alt="Course 3">
+                <h3>Digital Marketing</h3>
+                <p>Boost your marketing skills with digital strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="books" class="section">
+        <h2>Top Selling Books</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://www.mahakaalprasad.com/cdn/shop/files/71jiacOsB7L._SY425.jpg?v=1714472043" alt="Book 1">
+                <h3><a href>Bhagavath Gita</a></h3>
+                <p>Selling Price:Rs.500</p>
+                <p>MRP:Rs.800 </p>
+            </div>
+            <div class="card">
+                <img src="https://s26162.pcdn.co/wp-content/uploads/2018/10/invisibleman-1509049531-640x996.jpg" alt="Book 2">
+                <h3><a href>Deep Work</a></h3>
+                <p>Selling Price:Rs.300</p>
+                <p>MRP:Rs.500</p>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/81F90H7hnML._AC_UF1000,1000_QL80_.jpg" alt="Book 3">
+                <h3><a href>Atomic Habits</a></h3>
+                <p>Selling Price:Rs.200</p>
+                <p>MRP:Rs.600</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Learn&Read. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
