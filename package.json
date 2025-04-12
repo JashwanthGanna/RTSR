@@ -1,0 +1,19 @@
+{
+    "name": "e-learning-app",
+    "version": "1.0.0",
+    "description": "An e-learning app with user authentication and image uploads",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "express": "^4.17.1",
+      "mongoose": "^5.10.9",
+      "multer": "^1.4.2"
+    },
+    "devDependencies": {},
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  
